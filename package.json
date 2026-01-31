@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Browser extension for scanning and highlighting elements by custom attributes.",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "dev": "vite build --watch",
     "build": "tsc && vite build",
