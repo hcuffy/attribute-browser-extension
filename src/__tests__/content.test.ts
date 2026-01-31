@@ -246,11 +246,15 @@ describe('Contents Element Scan', () => {
         });
     });
 
-    describe('edge cases', () => {
+    describe('Edge Cases', () => {
         it('should return -1 for invalid attribute selector', () => {
+            const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
             const count = scanElements('[invalid', 'with');
 
             expect(count).toBe(-1);
+            expect(errorSpy).toHaveBeenCalled();
+
+            errorSpy.mockRestore();
         });
 
         it('should handle custom attribute names', () => {
