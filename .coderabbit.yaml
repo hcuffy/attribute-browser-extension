@@ -1,0 +1,23 @@
+language: en-US
+
+reviews:
+  high_level_summary: true
+  poem: false
+
+  path_filters:
+    - "!dist/**"
+    - "!node_modules/**"
+    - "!pnpm-lock.yaml"
+
+  path_instructions:
+    - path: "src/**/*"
+      instructions: |
+        Follow the review guidelines from .github/coderabbit.md
+
+    - path: "manifest.json"
+      instructions: |
+        Chrome Extension Manifest V3. Only request necessary permissions.
+
+    - path: "vite.config.ts"
+      instructions: |
+        Build config with postBuildPlugin for icons, manifest copy, and path fixes.

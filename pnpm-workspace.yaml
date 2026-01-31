@@ -1,0 +1,7 @@
+packages:
+  - fleetster_modules/f-mongoose-schemas
+
+ignoredBuiltDependencies:
+  - esbuild
+
+minimumReleaseAge: 20160
