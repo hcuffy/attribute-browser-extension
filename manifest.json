@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Attribute Scanner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scan and highlight elements by custom attributes (e.g., data-cy for Cypress testing)",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "src/popup/popup.html",
