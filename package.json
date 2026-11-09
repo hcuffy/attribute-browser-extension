@@ -39,7 +39,7 @@
     "sharp": "^0.35.5",
     "ts-jest": "^29.4.14",
     "ts-node": "^10.9.2",
-    "typescript": "5.9.3",
+    "typescript": "6.0.3",
     "typescript-eslint": "8.71.2",
     "vite": "8.3.4",
     "vite-plugin-web-extension": "^4.5.1"
